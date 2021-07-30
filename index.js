@@ -51,8 +51,13 @@ for(var i = 0 ; i < question_array.length ; i++)
 questions(current_question.question, current_question.answer);}
 
 if(score >= high_scores.high_score)
-{console.log("You are the new high scorer");}
-else{console.log("high score is " + high_scores.high_score);}
+{console.log("You are the new high scorer");
+high_scores.name = userName;
+high_scores.high_score = score;
+console.log(" The new high score is " + score + " by " + userName);}
+else{console.log("The High score is scored by " + high_scores.name + " and the high score is " + high_scores.high_score);
+
+}
 
 
   
