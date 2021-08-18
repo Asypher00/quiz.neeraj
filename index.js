@@ -45,7 +45,12 @@ var question_four = {
   answer : "Virat Kohli",
 };
 
-var question_array = [question_one, question_two, question_three, question_four];
+var question_five = {
+  question : "What is my birth month?",
+  answer : "October",
+};
+
+var question_array = [question_one, question_two, question_three, question_four, question_five];
 for(var i = 0 ; i < question_array.length ; i++)
 { var current_question = question_array[i];
 questions(current_question.question, current_question.answer);}
